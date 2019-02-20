@@ -12,11 +12,17 @@
 
 }
 
+@font-face {
+  font-family: 'BPdotsSquareVF';
+  src: url(../fonts/BPdotsSquareVF.ttf);
+  font-weight: 1 999;
+}
+
 .ad	{
 
 	height: 300px;
 	width: 720px;
-	border: 1px solid black;
+	border: 1px dotted salmon;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -66,11 +72,12 @@
 
 .price	{
 
-	font-family: BPDots;
+	font-family: BPdotsSquareVF;
 	font-size: 50px;
 	position: relative;
 	top: 50px;
 	left: 10px;
+	text-rendering: geometricPrecision;
 	animation: price infinite alternate .5s;
 
 }
