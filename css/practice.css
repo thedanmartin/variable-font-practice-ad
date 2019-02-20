@@ -1,0 +1,103 @@
+@font-face	{
+
+	font-family: 'LeagueMono';
+	src: url(../fonts/LeagueMono.ttf);
+
+}
+
+@font-face	{
+
+	font-family: 'BPDots';
+	src: url(../fonts/BPDots.woff);
+
+}
+
+.ad	{
+
+	height: 300px;
+	width: 720px;
+	border: 1px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.title	{
+
+	font-family: LeagueMono;
+	font-size: 60px;
+	font-weight: 200;
+	color: salmon;
+	position: relative;
+	top: 0px;
+	left: 10px;
+	text-rendering: geometricPrecision;
+	animation: title infinite alternate 2s;
+
+
+}
+
+.company	{
+
+	font-family: Arial;
+	font-size: 1em;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	max-width: 50%;
+	line-height: 1.2em;
+
+}
+
+.description	{
+
+	font-family: Arial;
+	font-size: 1em;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	max-width: 50%;
+	line-height: 1.2em;
+	padding-top: 10px;
+
+}
+
+.price	{
+
+	font-family: BPDots;
+	font-size: 50px;
+	position: relative;
+	top: 50px;
+	left: 10px;
+	animation: price infinite alternate .5s;
+
+}
+
+.image	{
+
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	width: 299px;
+	height: 299px;
+	background: url(../images/sushi-tape.jpg);
+	background-size: 100%;
+	z-index: -1;
+
+}
+
+@keyframes title	{
+
+	0%		{	font-variation-settings: "wdth" 30;	}
+	100%	{ font-variation-settings: "wdth" 200;	}
+
+}
+
+@keyframes price	{
+	
+	0%		{	font-variation-settings: "wght" 1;	}
+	100%	{ font-variation-settings: "wght" 500;	}
+	
+}
